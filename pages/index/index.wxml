@@ -1,13 +1,27 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<cu-custom>
+    <view slot="content">成本数据查询系统</view>
+</cu-custom>
+<view class="logs">
+    <view class="logo-box">
+        <image class="logo" src="../../images/w1.png"></image>
+    </view>
+    <view class="body">
+        <form bindsubmit="submit">
+            <view class="username">
+                <label>账 号：</label>
+                <input name="username" placeholder="" value=""></input>
+            </view>
+            <view class="password">
+                <label>密 码：</label>
+                <input name="pwd" password="true" placeholder="" value=""></input>
+            </view>
+            <view>
+                <button class="subm" formType="submit">登录</button>
+            </view>
+        </form>
+    </view>
+    <view class="img_foter">
+        <image src="../../images/w.png"></image>
+        <view class="shuju">- 成本数据查询系统 -</view>
+    </view>
 </view>

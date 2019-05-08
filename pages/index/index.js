@@ -1,54 +1,68 @@
-//index.js
-//获取应用实例
-const app = getApp()
+var e = require("../../utils/util.js");
 
-Page({
-  data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
+Page(function(e, t, a) {
+    return t in e ? Object.defineProperty(e, t, {
+        value: a,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+    }) : e[t] = a, e;
+}({
+    data: {
+        logs: []
+    },
+    onLoad: function() {
         this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
+            logs: (wx.getStorageSync("logs") || []).map(function(t) {
+                return e.formatTime(new Date(t));
+            })
+        });
+        var t = wx.getStorageSync("lastTime"), a = Date.parse(new Date());
+        (a /= 1e3) - t < 604800 && wx.redirectTo({
+            url: "../component/card/card"
+        });
+    },
+    submit: function(e) {
+        console.log(e.detail.value.username);
     }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  }
-})
+}, "submit", function(e) {
+    var t = e.detail.value.username, a = e.detail.value.pwd;
+    0 == t.length || 0 == a.length ? wx.showToast({
+        title: "账号和密码不能为空",
+        icon: "none",
+        duration: 2e3
+    }) : (wx.showLoading({
+        title: "加载中"
+    }), wx.request({
+        url: "https://xuhui.lalalazzw.top:8888/login",
+        data: {
+            username: t,
+            password: a
+        },
+        method: "POST",
+        header: {
+            "content-type": "application/x-www-form-urlencoded"
+        },
+        dataType: "json",
+        success: function(e) {
+            wx.setStorageSync("accessToken", e.data.data.access_token);
+            var t = Date.parse(new Date());
+            t /= 1e3, wx.setStorageSync("lastTime", t), "0" == e.data.code ? wx.showToast({
+                title: "登录成功",
+                icon: "success",
+                duration: 1e3,
+                success: function() {
+                    setTimeout(function() {
+                        wx.redirectTo({
+                            url: "../component/card/card"
+                        });
+                    }, 1e3);
+                }
+            }) : wx.showToast({
+                title: "账号或密码错误",
+                icon: "none",
+                duration: 1e3
+            });
+        }
+    }));
+}));
