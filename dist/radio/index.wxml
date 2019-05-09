@@ -1,0 +1,3 @@
+<wux-cell label="{{label}}" prefixCls="{{cellPrefixCls}}" thumb="{{thumb}}" title="{{title}}" wuxClass="{{classes.cell}}">
+    <wux-selectable controlled bind:change="radioChange" checked="{{inputChecked}}" color="{{color}}" disabled="{{disabled}}" prefixCls="{{selectablePrefixCls}}" slot="footer" type="radio" value="{{value}}" wuxClass="{{classes.selectable}}"></wux-selectable>
+</wux-cell>

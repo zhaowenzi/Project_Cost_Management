@@ -1,0 +1,20 @@
+<wux-cell-group id="wux-cell-group" label="{{label}}" prefixCls="{{cellGroupPrefixCls}}" title="{{title}}" wuxClass="{{prefixCls}}">
+    <wux-checkbox bind:change="onCheckboxChange" cellPrefixCls="{{option.cellPrefixCls||'wux-cell'}}" checked="{{common.getChecked(inputValue,option)}}" color="{{option.color||'balanced'}}" data-index="{{index}}" disabled="{{option.disabled}}" extra="{{option.extra}}" label="{{option.label}}" prefixCls="{{option.prefixCls||'wux-checkbox'}}" selectablePrefixCls="{{option.selectablePrefixCls||'wux-selectable'}}" title="{{option.title}}" value="{{option.value}}" wx:if="{{options.length>0}}" wx:for="{{common.getOptions(options)}}" wx:for-item="option"></wux-checkbox>
+    <slot wx:if="{{options.length===0}}"></slot>
+</wux-cell-group>
+<wxs module="common">
+module.exports.getOptions = (function(options) {
+    return (options.map((function(option) {
+        if (option.constructor === 'String') {
+            return (({
+                title: option,
+                value: option,
+            }))
+        };
+        return (option)
+    })))
+});
+module.exports.getChecked = (function(values, option) {
+    return (values.indexOf(option.value) !== -1)
+});
+</wxs>

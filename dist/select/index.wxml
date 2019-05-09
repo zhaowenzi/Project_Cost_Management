@@ -1,0 +1,1 @@
+<wux-popup-select controlled disabled bind:cancel="onCancel" bind:confirm="onConfirm" bind:valueChange="onValueChange" bind:visibleChange="onVisibleChange" id="wux-popup-select" max="{{max}}" multiple="{{multiple}}" options="{{options}}" prefixCls="{{prefixCls}}" toolbar="{{toolbar}}" value="{{value}}" visible="{{visible}}"></wux-popup-select>

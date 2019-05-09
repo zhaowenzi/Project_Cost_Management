@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "wux-animation-group": "../animation-group/index",
+        "wux-backdrop": "../backdrop/index",
+        "cu-custom": "/colorui/components/cu-custom"
+    }
+}

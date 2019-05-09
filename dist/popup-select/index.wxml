@@ -1,0 +1,16 @@
+<wux-popup bind:close="close" bind:closed="onClosed" hasFooter="{{false}}" hasHeader="{{false}}" mountOnEnter="{{false}}" position="bottom" safeArea="bottom" visible="{{popupVisible}}">
+    <view class="{{classes.wrap}}" wx:if="{{mounted}}">
+        <view catchtouchmove="noop" class="{{classes.toolbar}}" wx:if="{{toolbar}}">
+            <view class="{{classes.inner}}">
+                <view bindtap="onCancel" class="{{classes.cancel}}" hoverClass="{{classes.hover}}" wx:if="{{toolbar.cancelText}}">{{toolbar.cancelText}}</view>
+                <view class="{{classes.title}}">{{toolbar.title}}</view>
+                <view bindtap="onConfirm" class="{{classes.confirm}}" hoverClass="{{classes.hover}}" wx:if="{{toolbar.confirmText}}">{{toolbar.confirmText}}</view>
+            </view>
+        </view>
+        <scroll-view scrollY class="{{prefixCls+'__scroll-view'}}" scrollTop="{{scrollTop}}">
+            <wux-radio-group bind:change="onValueChange" id="wux-select" options="{{options}}" value="{{inputValue}}" wx:if="{{!multiple}}"></wux-radio-group>
+            <wux-checkbox-group bind:change="onValueChange" id="wux-select" options="{{options}}" value="{{inputValue}}" wx:else></wux-checkbox-group>
+        </scroll-view>
+    </view>
+</wux-popup>
+<slot></slot>

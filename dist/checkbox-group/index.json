@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "wux-cell-group": "../cell-group/index",
+        "wux-checkbox": "../checkbox/index",
+        "cu-custom": "/colorui/components/cu-custom"
+    }
+}

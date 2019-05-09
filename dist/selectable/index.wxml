@@ -1,0 +1,15 @@
+<label bindtap="onChange" class="wux-class {{classes.wrap}}" style="{{extStyle}}">
+    <block wx:if="{{type==='checkbox'}}">
+        <checkbox checked="{{inputChecked}}" class="wux-input-class {{classes.input}}" color="{{inputColor}}" disabled="{{disabled}}" value="{{value}}"></checkbox>
+        <icon class="{{classes.icon}}" color="{{!disabled?inputColor:'#666'}}" size="23" type="{{inputChecked?'success':'circle'}}"></icon>
+    </block>
+    <block wx:elif="{{type==='radio'}}">
+        <radio checked="{{inputChecked}}" class="wux-input-class {{classes.input}}" color="{{inputColor}}" disabled="{{disabled}}" value="{{value}}"></radio>
+        <icon class="{{classes.icon}}" color="{{!disabled?inputColor:'#666'}}" hidden="{{!inputChecked}}" size="16" type="success_no_circle"></icon>
+    </block>
+    <block wx:else>
+        <slot name="icon-on" wx:if="{{inputChecked}}"></slot>
+        <slot name="icon-off" wx:else></slot>
+    </block>
+    <slot></slot>
+</label>

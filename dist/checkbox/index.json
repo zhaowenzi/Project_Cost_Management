@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "wux-cell": "../cell/index",
+        "wux-selectable": "../selectable/index",
+        "cu-custom": "/colorui/components/cu-custom"
+    }
+}
