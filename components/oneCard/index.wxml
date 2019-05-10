@@ -1,0 +1,66 @@
+<view class="one-card">
+    <view class="content-head">
+        <view class="titleAndIcon">
+            <view class="title">
+                <text>{{xinghao}}</text>
+            </view>
+            <view bindtap="hide" class="icon">
+                <image src="{{img}}"></image>
+            </view>
+        </view>
+        <view class="cardId">
+            <text>ID {{theid}}</text>
+        </view>
+        <view class="model">
+            <view class="modelTtile">型号</view>
+            <view class="modelContent">{{xinghao}}</view>
+        </view>
+        <view class="four-content">
+            <view class="fourTitle">类别</view>
+            <view class="fourValue">{{hetongleibie}}</view>
+            <view class="fourTitle second">隶属项目</view>
+            <view class="fourValue">{{lishuxiangmu}}</view>
+            <view class="fourTitle second">时间</view>
+            <view class="fourValue">{{qiandingshijian}}</view>
+        </view>
+        <view class="four-content"></view>
+        <view class="threeArea">
+            <view class="oneArea firstArea">
+                <view class="priceTitle">不含税单价<span class="danwei">{{danwei}}</span>
+                </view>
+                <view class="price">
+                    <text class="pricenum">{{buhanshuidanjia}}</text>
+                </view>
+            </view>
+            <view class="oneArea">
+                <view class="priceTitle hou">主材价<span class="danwei">{{danwei}}</span>
+                </view>
+                <view class="price">
+                    <text class="pricenum hou">{{zhucaijia}}</text>
+                </view>
+            </view>
+            <view class="oneArea">
+                <view class="priceTitle hou">施工价<span class="danwei">{{danwei}}</span>
+                </view>
+                <view class="price">
+                    <text class="pricenum hou">{{shigongjia}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="content-hide" wx:if="{{dispear}}">
+        <view class="special">
+            <view class="modelTtile">特点</view>
+            <view class="modelContent">{{tedian}}</view>
+        </view>
+        <view class="timeAndFrom">
+            <view class="modelTtile">数据来源</view>
+            <view class="modelContent">{{shujuleibie}}</view>
+        </view>
+        <view class="beizhu">备注</view>
+        <view class="beizhuValue">{{beizhu}}</view>
+        <view class="bt" wx:for="{{wx_data}}">
+            <button bindtap="yulan" data-experienceid="{{item.file_path}}">{{item.file_name}}</button>
+        </view>
+    </view>
+</view>

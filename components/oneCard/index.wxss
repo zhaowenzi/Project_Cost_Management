@@ -1,0 +1,208 @@
+.one-card {
+    background-color: white;
+    margin: auto;
+    width: 88%;
+    padding: 14rpx 22rpx;
+    box-sizing: border-box;
+    border-radius: 10rpx;
+    border: 2px solid #e6e6e9;
+    margin-bottom: 10rpx;
+}
+
+.titleAndIcon {
+    display: flex;
+    height: 48rpx;
+}
+
+.title {
+    flex: 1;
+    font-size: 30rpx;
+    color: #413b49;
+    letter-spacing: 1.5rpx;
+    line-height: 50rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.icon {
+    margin-left: 10rpx;
+    height: 48rpx;
+    width: 48rpx;
+}
+
+.icon image {
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.cardId text {
+    background-color: #665f92;
+    padding: 2rpx 12rpx;
+    border-radius: 20rpx;
+    color: white;
+    font-size: 20rpx;
+}
+
+.model {
+    margin-top: 10rpx;
+    display: flex;
+}
+
+.modelTtile {
+    margin-right: 20rpx;
+    color: #9884bd;
+    font-weight: bold;
+    font-size: 25rpx;
+}
+
+.modelContent {
+    flex: 1;
+    color: #665f92;
+    font-size: 25rpx;
+}
+
+.four-content {
+    margin-top: 10rpx;
+    display: flex;
+}
+
+.fourTitle {
+    margin-right: 20rpx;
+    color: #9884bd;
+    font-weight: bold;
+    font-size: 25rpx;
+}
+
+.fourValue {
+    color: #564e61;
+    font-weight: bold;
+    font-size: 25rpx;
+}
+
+.second {
+    margin-left: 30rpx;
+}
+
+.threeArea {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rpx;
+}
+
+.oneArea {
+    border: 1px solid #bdbbce;
+    width: 31%;
+    height: 120rpx;
+    border-radius: 8rpx;
+}
+
+.firstArea {
+    background: linear-gradient(#b2a2cd,#9884bd);
+}
+
+.priceTitle {
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    font-size: 20rpx;
+    color: #f5f5f5;
+    margin-top: 15rpx;
+    font-weight: bold;
+}
+
+.price {
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    margin-top: 16rpx;
+    color: white;
+}
+
+.pricenum {
+    font-size: 36rpx;
+    font-weight: bold;
+    color: white;
+}
+
+.danwei {
+    margin-left: 8rpx;
+    color: #cbc1de;
+    font-size: 15rpx;
+}
+
+.hou {
+    color: #74737c;
+}
+
+.special {
+    margin-top: 20rpx;
+    display: flex;
+}
+
+.specialTtile {
+    margin-right: 30rpx;
+    color: #696193;
+    font-weight: bold;
+    font-size: 25rpx;
+}
+
+.specialContent {
+    flex: 1;
+    color: #b9b8bb;
+    font-size: 25rpx;
+    border-bottom: 1px solid #eed2ee;
+    padding-bottom: 16rpx;
+}
+
+.timeAndFrom {
+    margin-top: 20rpx;
+    display: flex;
+}
+
+.thisTitle {
+    margin-right: 30rpx;
+    color: #696193;
+    font-weight: bold;
+    font-size: 25rpx;
+}
+
+.thisValue {
+    box-sizing: border-box;
+    flex: 1;
+    color: #b9b8bb;
+    font-size: 25rpx;
+    border-bottom: 1px solid #eed2ee;
+    padding-bottom: 16rpx;
+}
+
+.beizhu {
+    margin-top: 20rpx;
+    color: #969696;
+    font-weight: bold;
+    font-size: 25rpx;
+}
+
+.beizhuValue {
+    font-size: 25rpx;
+    margin-top: 6rpx;
+    margin-bottom: 15rpx;
+    color: #afafaf;
+}
+
+.bt button {
+    margin-top: 15rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 25rpx;
+    color: #E8E8E8;
+    background-color: #564e61;
+}
+
+.bt_null button {
+    margin-top: 30rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 25rpx;
+    color: #E8E8E8;
+    background-color: gray;
+}

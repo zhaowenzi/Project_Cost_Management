@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "van-transition": "../transition/index",
+        "cu-custom": "/colorui/components/cu-custom"
+    }
+}
