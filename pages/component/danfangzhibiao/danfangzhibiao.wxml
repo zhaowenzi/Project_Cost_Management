@@ -1,0 +1,70 @@
+<cu-custom bgColor="bg-white" class="biaotou">
+    <view slot="content">单方指标</view>
+</cu-custom>
+<view style="height:100%">
+    <scroll-view scrollY class="scrollPage content-bg">
+        <c-oneContent beizhu="{{item.beizhu}}" danfangzhibiao="{{item.danfangzhibiao}}" danwei="{{item.danwei}}" duiyingqingdanhetong="{{item.duiyingqingdanhetong}}" filename="{{item.filename}}" lishuhetongleibie="{{item.lishuhetongleibie}}" lishuxiangmu="{{item.lishuxiangmu}}" qiandingshijian="{{item.qiandingshijian}}" shujuleibie="{{item.shujuleibie}}" tedian="{{item.tedian}}" theid="{{item.id}}" url="{{item.url}}" wx_path="{{item.wx_path}}" wx:for="{{data}}" wx:key="item.theid"></c-oneContent>
+        <wux-divider wx:if="{{isLoading==true}}">
+            <view class="loadmore">
+                <view class="loading"></view>
+                <text class="text">正在加载</text>
+            </view>
+        </wux-divider>
+        <wux-divider wx:if="{{noMore==true}}">
+            <view class="loadmore">
+                <text class="text">没有更多了</text>
+            </view>
+        </wux-divider>
+        <wux-divider wx:if="{{haveMore==true}}">
+            <view class="loadmore">
+                <text class="text">下拉加载更多</text>
+            </view>
+        </wux-divider>
+    </scroll-view>
+</view>
+<van-popup bind:close="onClose" position="top" show="{{show}}">
+    <view style="height:{{biaotouHeight}}px"></view>
+    <view class="form">
+        <form bindreset="reset" bindsubmit="submit">
+            <view class="gjz">
+                <view class="gjztitle">
+        关键字
+      </view>
+                <view class="gjzvalue">
+                    <input name="input1" placeholder="请输入关键字" placeholderClass="pl"></input>
+                </view>
+            </view>
+            <view class="htlb">
+                <view class="htlbtitle">
+        合同类别
+      </view>
+                <view class="htlbvalue">
+                    <input name="input2" placeholder="请输入合同类别" placeholderClass="pl"></input>
+                </view>
+            </view>
+            <view class="selectall">
+                <view class="lsxm">
+                    <view class="lsmtitle">
+          隶属项目
+        </view>
+                    <view class="lsxmvalue">
+                        <input name="input3" placeholder="请输入隶属项目" placeholderClass="pl"></input>
+                    </view>
+                </view>
+            </view>
+            <view class="sjform">
+                <view class="sjformtitle">数据来源</view>
+                <view class="sjformvalue">
+                    <input name="input4" placeholder="请输入数据来源" placeholderClass="pl"></input>
+                </view>
+            </view>
+            <view class="twobt">
+                <button class="reset" formType="reset">清空</button>
+                <button class="submit" formType="submit">提交</button>
+            </view>
+        </form>
+    </view>
+</van-popup>
+<view bindtap="onChangeHide" class="findIcon">
+    <image src="/images/3.png"></image>
+</view>

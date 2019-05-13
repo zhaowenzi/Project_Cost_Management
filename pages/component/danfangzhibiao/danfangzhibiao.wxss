@@ -1,0 +1,272 @@
+page {
+    background-color: rgb(245,245,245);
+}
+
+.top-group {
+    color: #4c4852;
+    height: 120rpx;
+    line-height: 150rpx;
+    text-align: center;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+
+.content-bg {
+    padding: 20rpx 0;
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.loadmore {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.loading {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    animation: loading 1s steps(12,end) infinite;
+    background: transparent url(data:image/svg+xml;base64,PHN2ZyB0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=) no-repeat;
+    background-size: 100%;
+}
+
+.text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@-webkit-keyframes loading {
+    0% {
+        transform: rotate3d(0,0,1,0deg);
+    }
+
+    100% {
+        transform: rotate3d(0,0,1,360deg);
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate3d(0,0,1,0deg);
+    }
+
+    100% {
+        transform: rotate3d(0,0,1,360deg);
+    }
+}
+
+.findIcon image {
+    position: fixed;
+    left: 308rpx;
+    bottom: 20rpx;
+    border-radius: 50%;
+    width: 130rpx;
+    height: 130rpx;
+    background-color: transparent;
+}
+
+.top-group {
+    color: #4c4852;
+    height: 120rpx;
+    line-height: 150rpx;
+    text-align: center;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+
+.form {
+    padding: 20rpx 50rpx;
+    background-color: rgb(245,245,245);
+    border-radius: rpx;
+}
+
+.gjz {
+    display: flex;
+    margin-top: 20rpx;
+}
+
+.gjztitle {
+    margin-left: 10rpx;
+    font-size: 30rpx;
+    color: #665f92;
+    line-height: 60rpx;
+    font-weight: bold;
+}
+
+.gjzvalue input {
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    width: 480rpx;
+    height: 64rpx;
+    background-color: #e1e1e1;
+    border-radius: 5rpx;
+    margin-left: 60rpx;
+}
+
+.htlb {
+    display: flex;
+    margin-top: 20rpx;
+}
+
+.htlbtitle {
+    margin-left: 10rpx;
+    font-size: 30rpx;
+    color: #665f92;
+    line-height: 60rpx;
+    font-weight: bold;
+}
+
+.htlbvalue input {
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    width: 480rpx;
+    height: 64rpx;
+    background-color: #e1e1e1;
+    border-radius: 5rpx;
+    margin-left: 30rpx;
+}
+
+.lsxm {
+    display: flex;
+    margin-top: 20rpx;
+}
+
+.lsmtitle {
+    margin-left: 10rpx;
+    font-size: 30rpx;
+    color: #665f92;
+    line-height: 60rpx;
+    font-weight: bold;
+}
+
+.lsxmvalue input {
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    width: 480rpx;
+    height: 64rpx;
+    background-color: #e1e1e1;
+    border-radius: 5rpx;
+    margin-left: 30rpx;
+}
+
+.pl {
+    font-size: 30rpx;
+    color: #afafaf;
+}
+
+.selects {
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    width: 480rpx;
+    line-height: 64rpx;
+    height: 64rpx;
+    background-color: #e1e1e1;
+    border-radius: 5rpx;
+    margin-left: 30rpx;
+    font-size: 32rpx;
+    color: #afafaf;
+}
+
+.selects1 {
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    width: 480rpx;
+    line-height: 64rpx;
+    height: 64rpx;
+    background-color: #e1e1e1;
+    border-radius: 12rpx;
+    margin-left: 40rpx;
+    font-size: 32rpx;
+    color: black;
+}
+
+.sjform {
+    display: flex;
+    margin-top: 20rpx;
+}
+
+.sjformtitle {
+    margin-left: 10rpx;
+    font-size: 30rpx;
+    color: #665f92;
+    line-height: 60rpx;
+    font-weight: bold;
+}
+
+.sjformvalue input {
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    width: 480rpx;
+    height: 64rpx;
+    background-color: #e1e1e1;
+    border-radius: 5rpx;
+    margin-left: 30rpx;
+}
+
+.selectall {
+    position: relative;
+}
+
+.selectItem {
+    background-color: #e1e1e1;
+    position: absolute;
+    top: 74rpx;
+    left: 172rpx;
+    width: 480rpx;
+    z-index: 999;
+    border-radius: 12rpx;
+    font-size: 32rpx;
+    color: #413b49;
+    font-weight: bold;
+}
+
+.selectItem view {
+    padding-left: 20rpx;
+    box-sizing: border-box;
+    height: 64rpx;
+    line-height: 64rpx;
+}
+
+.img {
+    height: 56rpx;
+    width: 50rpx;
+    position: absolute;
+    right: 20rpx;
+    top: 6rpx;
+    transform: rotate(180deg);
+}
+
+.img1 {
+    height: 56rpx;
+    width: 50rpx;
+    position: absolute;
+    right: 20rpx;
+    top: 0;
+}
+
+.twobt {
+    margin-top: 40rpx;
+    display: flex;
+    margin-bottom: 20rpx;
+}
+
+.twobt button {
+    width: 45%;
+    line-height: 80rpx;
+    height: 80rpx;
+    color: white;
+}
+
+.reset {
+    background-color: #9884bd;
+    margin-right: 20rpx;
+}
+
+.submit {
+    background-color: #564e61;
+    margin-left: 20rpx;
+}

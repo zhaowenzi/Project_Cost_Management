@@ -1,0 +1,99 @@
+<cu-custom bgColor="bg-white" class="biaotou">
+    <view slot="content">{{current_title}}</view>
+    <view class="action" slot="right"></view>
+</cu-custom>
+<view style="height:100%">
+    <van-tabs active="{{active}}" bind:change="onChange" color="#665f92">
+        <van-tab title="单价">
+            <scroll-view scrollY bindscrolltoupper="upper" class="scrollPage content-bg">
+                <c-oneCard beizhu="{{item.beizhu}}" buhanshuidanjia="{{item.buhanshuidanjia}}" danwei="{{item.danwei}}" hetong="{{item.hetong}}" hetongleibie="{{item.hetongleibie}}" lishuxiangmu="{{item.lishuxiangmu}}" qiandingshijian="{{item.qiandingshijian}}" shigongjia="{{item.shigongjia}}" show_detail="{{item.show_detail}}" shujuleibie="{{item.shujuleibie}}" tedian="{{item.tedian}}" theid="{{item.id}}" url="{{item.url}}" wx_data="{{item.wx_data}}" wx_path="{{item.wx_path}}" xinghao="{{item.xinghao}}" zhucaijia="{{item.zhucaijia}}" wx:for="{{data}}" wx:key="item.id"></c-oneCard>
+                <wux-divider wx:if="{{isLoading==true}}">
+                    <view class="loadmore">
+                        <view class="loading"></view>
+                        <text class="text">正在加载</text>
+                    </view>
+                </wux-divider>
+                <wux-divider wx:if="{{noMore==true}}">
+                    <view class="loadmore">
+                        <text class="text">没有更多了</text>
+                    </view>
+                </wux-divider>
+                <wux-divider wx:if="{{haveMore==true}}">
+                    <view class="loadmore">
+                        <text class="text">下拉加载更多</text>
+                    </view>
+                </wux-divider>
+            </scroll-view>
+        </van-tab>
+        <van-tab title="单方指标">
+            <scroll-view scrollY class="scrollPage content-bg">
+                <c-oneContent beizhu="{{item.beizhu}}" danfangzhibiao="{{item.danfangzhibiao}}" danwei="{{item.danwei}}" duiyingqingdanhetong="{{item.duiyingqingdanhetong}}" filename="{{item.filename}}" lishuhetongleibie="{{item.lishuhetongleibie}}" lishuxiangmu="{{item.lishuxiangmu}}" qiandingshijian="{{item.qiandingshijian}}" shujuleibie="{{item.shujuleibie}}" tedian="{{item.tedian}}" theid="{{item.id}}" url="{{item.url}}" wx_data="{{item.wx_data}}" wx_path="{{item.wx_path}}" wx:for="{{data_2}}" wx:key="item.theid"></c-oneContent>
+                <wux-divider wx:if="{{isLoading_2==true}}">
+                    <view class="loadmore">
+                        <view class="loading"></view>
+                        <text class="text">正在加载</text>
+                    </view>
+                </wux-divider>
+                <wux-divider wx:if="{{noMore_2==true}}">
+                    <view class="loadmore">
+                        <text class="text">没有更多了</text>
+                    </view>
+                </wux-divider>
+                <wux-divider wx:if="{{haveMore_2==true}}">
+                    <view class="loadmore">
+                        <text class="text">下拉加载更多</text>
+                    </view>
+                </wux-divider>
+            </scroll-view>
+        </van-tab>
+    </van-tabs>
+</view>
+<van-popup bind:close="onClose" position="top" show="{{show}}">
+    <view style="height:{{biaotouHeight}}px"></view>
+    <view class="form">
+        <form bindreset="reset" bindsubmit="submit">
+            <view class="gjz">
+                <view class="gjztitle">
+        关键字
+      </view>
+                <view class="gjzvalue">
+                    <input name="input1" placeholder="请输入关键字" placeholderClass="pl"></input>
+                </view>
+            </view>
+            <view class="htlb">
+                <view class="htlbtitle">
+        合同类别
+      </view>
+                <view class="htlbvalue" style="position: absolute;">
+                    <input name="input2" placeholder="请输入合同类别" placeholderClass="pl" style="margin-left:160rpx;" value="{{htlb_value}}"></input>
+                    <icon bindtap="click_hetongleibie" color="gray" size="40rpx" style="position: absolute; right: 12rpx;top:12rpx;z-index: 1000" type="info"></icon>
+                </view>
+            </view>
+            <view class="selectall">
+                <view class="lsxm">
+                    <view class="lsmtitle">
+          隶属项目
+        </view>
+                    <view class="lsxmvalue" style="position: absolute;">
+                        <input name="input3" placeholder="请输入隶属项目" placeholderClass="pl" style="margin-left:160rpx;" value="{{lsxm_value}}"></input>
+                        <icon bindtap="click_lishuxiangmu" color="gray" size="40rpx" style="position: absolute; right: 12rpx;top:12rpx;z-index: 1000" type="info"></icon>
+                    </view>
+                </view>
+            </view>
+            <view class="sjform">
+                <view class="sjformtitle">数据来源</view>
+                <view class="sjformvalue">
+                    <input name="input4" placeholder="请输入数据来源" placeholderClass="pl"></input>
+                </view>
+            </view>
+            <view class="twobt">
+                <button class="reset" formType="reset">清空</button>
+                <button class="submit" formType="submit">提交</button>
+            </view>
+        </form>
+    </view>
+</van-popup>
+<wux-select id="wux-select1"></wux-select>
+<view bindtap="onChangeHide" class="findIcon">
+    <image src="/images/3.png"></image>
+</view>

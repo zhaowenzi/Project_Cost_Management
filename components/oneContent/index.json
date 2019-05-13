@@ -1,5 +1,5 @@
 {
-    "navigationBarTitleText": "成本数据查系统",
+    "component": true,
     "usingComponents": {
         "cu-custom": "/colorui/components/cu-custom"
     }

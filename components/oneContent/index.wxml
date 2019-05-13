@@ -1,0 +1,42 @@
+<view class="onecontent">
+    <view class="content-top">
+        <view class="idAndIcon">
+            <view class="idView">
+                <text class="id">ID {{theid}}</text>
+            </view>
+            <view bindtap="hide" class="icon">
+                <image src="{{img}}"></image>
+            </view>
+        </view>
+        <view class="fourthing">
+            <view class="thingtitle">类别</view>
+            <view class="thingvalue">{{lishuhetongleibie}}</view>
+            <view class="thingtitle second">隶属项目</view>
+            <view class="thingvalue">{{lishuxiangmu}}</view>
+            <view class="thingtitle second">时间</view>
+            <view class="thingvalue">{{qiandingshijian}}</view>
+        </view>
+        <view class="Area">
+            <view class="areatitle">单方指标</view>
+            <view class="areavalue">
+                <text class="areavalue1">{{danfangzhibiao}}</text>
+                <text class="areavalue2">{{danwei}}</text>
+            </view>
+        </view>
+        <view class="suly">
+            <view class="sulytitle">数据来源</view>
+            <view class="sulyvalue">{{shujuleibie}}</view>
+        </view>
+    </view>
+    <view class="content-bottom" wx:if="{{dispear}}">
+        <view class="tedian">
+            <view class="tediantitle">特点</view>
+            <view class="tedianvalue">{{tedian}}</view>
+        </view>
+        <view class="beizhu">备注</view>
+        <view class="beizhuvalue">{{beizhu}}</view>
+        <view class="bt" wx:for="{{wx_data}}">
+            <button bindtap="yulan" data-experienceid="{{item.file_path}}">{{item.file_name}}</button>
+        </view>
+    </view>
+</view>

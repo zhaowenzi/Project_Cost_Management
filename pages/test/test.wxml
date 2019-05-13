@@ -1,0 +1,7 @@
+<van-popup bind:close="onClose" position="top" show="{{show}}">
+    <input type="text">测试</input>
+</van-popup>
+<button bindtap="onOpen">测试</button>
+<view bindtap="onChangeHide" class="findIcon" wx:if="{{!show}}">
+    <image src="/images/3.png"></image>
+</view>

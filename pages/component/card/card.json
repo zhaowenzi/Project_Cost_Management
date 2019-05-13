@@ -1,0 +1,14 @@
+{
+    "navigationBarTitleText": "Divider",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "van-popup": "/dist_ant/popup/index",
+        "c-oneCard": "/components/oneCard/index",
+        "wux-divider": "/dist/divider/index",
+        "van-tab": "/dist_ant/tab/index",
+        "van-tabs": "/dist_ant/tabs/index",
+        "c-oneContent": "/components/oneContent/index",
+        "wux-select": "/dist/select/index",
+        "cu-custom": "/colorui/components/cu-custom"
+    }
+}

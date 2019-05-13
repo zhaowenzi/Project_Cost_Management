@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "van-popup": "/dist_ant/popup/index",
+        "wux-divider": "/dist/divider/index",
+        "c-oneContent": "/components/oneContent/index",
+        "cu-custom": "/colorui/components/cu-custom"
+    }
+}

@@ -1,0 +1,212 @@
+.onecontent {
+    background-color: white;
+    width: 88%;
+    margin: auto;
+    border: 2px solid #e6e6e9;
+    border-radius: 10rpx;
+    padding: 14rpx 22rpx;
+    box-sizing: border-box;
+    margin-bottom: 10rpx;
+}
+
+.idAndIcon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.id {
+    font-size: 20rpx;
+    line-height: 48rpx;
+    background-color: #665f92;
+    color: white;
+    padding: 6rpx 16rpx;
+    border-radius: 20rpx;
+}
+
+.icon {
+    margin-left: 10rpx;
+    height: 48rpx;
+    width: 48rpx;
+}
+
+.icon image {
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.toTop {
+    margin-left: 8rpx;
+    margin-top: 2rpx;
+    width: 54rpx;
+    height: 60rpx;
+}
+
+.toBottom {
+    margin-left: 8rpx;
+    margin-top: 8rpx;
+    width: 54rpx;
+    height: 60rpx;
+    transform: rotate(180deg);
+}
+
+.fourTitle {
+    margin-right: 20rpx;
+    color: #9884bd;
+    font-weight: bold;
+    font-size: 25rpx;
+}
+
+.fourValue {
+    color: #564e61;
+    font-weight: bold;
+    font-size: 25rpx;
+}
+
+.second {
+    margin-left: 30rpx;
+}
+
+.fourthing {
+    margin-top: 10rpx;
+    display: flex;
+    font-size: 25rpx;
+    margin-left: 5rpx;
+}
+
+.thingtitle {
+    color: #9884bd;
+    font-weight: bold;
+    font-size: 25rpx;
+    margin-right: 20rpx;
+}
+
+.thingvalue {
+    font-size: 25rpx;
+    color: #564e61;
+    font-weight: bold;
+}
+
+.Area {
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    margin-top: 14rpx;
+    height: 120rpx;
+    border: 3rpx solid #948faf;
+    border-radius: 6rpx;
+}
+
+.areatitle {
+    color: #665f92;
+    margin-top: 10rpx;
+    font-size: 25rpx;
+}
+
+.areavalue {
+    margin-top: 2rpx;
+}
+
+.areavalue1 {
+    font-size: 46rpx;
+    font-weight: bold;
+    color: #564e61;
+}
+
+.areavalue2 {
+    margin-left: 6rpx;
+    font-size: 22rpx;
+    color: #cbc1de;
+}
+
+.suly {
+    margin-top: 8rpx;
+    display: flex;
+}
+
+.sulytitle {
+    font-size: 25rpx;
+    padding-right: 30rpx;
+    flex: 1;
+    text-align: right;
+    color: #cbc1de;
+}
+
+.sulyvalue {
+    font-size: 25rpx;
+    color: #564e61;
+    font-weight: bold;
+}
+
+.content-bottom {
+    margin-top: 8rpx;
+    border-top: 1px solid #9884bd;
+}
+
+.tedian {
+    margin-top: 20rpx;
+    display: flex;
+}
+
+.time {
+    display: flex;
+}
+
+.tediantitle {
+    font-size: 25rpx;
+    color: #665f92;
+    font-weight: bold;
+    margin-right: 30rpx;
+}
+
+.tedianvalue {
+    font-size: 25rpx;
+    flex: 1;
+    color: #88819b;
+    padding-bottom: 16rpx;
+    padding-left: 6rpx;
+}
+
+.timetitle {
+    font-size: 25rpx;
+    color: #665f92;
+    font-weight: bold;
+    margin-right: 30rpx;
+}
+
+.timevalue {
+    font-size: 25rpx;
+    flex: 1;
+    color: #88819b;
+    padding-bottom: 16rpx;
+    padding-left: 6rpx;
+}
+
+.beizhu {
+    margin-top: 15rpx;
+    font-size: 25rpx;
+    color: #969696;
+    font-weight: bold;
+}
+
+.beizhuvalue {
+    margin-top: 12rpx;
+    color: #afafaf;
+    font-size: 25rpx;
+}
+
+.bt button {
+    margin-top: 15rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 25rpx;
+    color: #E8E8E8;
+    background-color: #564e61;
+}
+
+.bt_null button {
+    margin-top: 30rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 25rpx;
+    color: #E8E8E8;
+    background-color: gray;
+}

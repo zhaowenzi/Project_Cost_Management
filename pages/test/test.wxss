@@ -1,0 +1,8 @@
+.findIcon image {
+    position: fixed;
+    left: 308rpx;
+    bottom: 20rpx;
+    border-radius: 50%;
+    width: 130rpx;
+    height: 130rpx;
+}

@@ -1,6 +1,6 @@
 {
-    "navigationBarTitleText": "成本数据查系统",
     "usingComponents": {
+        "van-popup": "/dist_ant/popup/index",
         "cu-custom": "/colorui/components/cu-custom"
     }
 }
