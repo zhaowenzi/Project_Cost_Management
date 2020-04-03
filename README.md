@@ -1,17 +1,17 @@
 ### 成本管理查询软件 - Project cost management software
 
-![1](https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/1.PNG)
+<img src="https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/1.PNG" height=300 alter="1">
 
-![2](https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/2.PNG)
+<img src="https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/2.PNG" height=300 alter="2">
 
-![3](https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/3.PNG)
+<img src="https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/3.PNG" height=300 alter="3">
 
-![4](https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/4.PNG)
+<img src="https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/4.PNG" height=300 alter="4">
 
-![5](https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/5.PNG)
+<img src="https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/5.PNG" height=300 alter="5">
 
-![6](https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/6.PNG)
+<img src="https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/6.PNG" height=300 alter="6">
 
-![7](https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/7.PNG)
+<img src="https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/7.PNG" height=300 alter="7">
 
-![8](https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/8.PNG)
+<img src="https://github.com/zhaowenzi/Project_Cost_Management/blob/master/screenshot/8.PNG" height=300 alter="8">
